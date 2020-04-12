@@ -7,8 +7,11 @@ Quindi per eseguire è necessario scaricare e installare il progetto suddetto al
 Unica cosa da rilevare come possibile problema nell'uso del suddetto progetto, è l'impiego di componenti non compatibili con python 3.6,  che impediscono cosi l'installazione e uso del suo pacchetto. Questo risolto, attraverso la messa a commento dell'import "from PIL import Image", del file plot.py.
 
 Gli esempi di rete bayesiane prese in considerazione, sono presenti nella cartella data della reposity di Ncullen93 o caricate per comodità anche all'interno di questo progetto
-
 ## Esecuzione
+Per l'esecuzione digitare:
+```python
+  python3 progetto.py
+```
 
 ## Riferimenti
 L'algoritmo per l'apprendimento dei parametri si basa sul documento di [Heckerman del 1997](http://machinelearning102.pbworks.com/f/Tutorial-BayesianNetworks.pdf), mentre per calcolare la divergenza tra una distribuzione di probabilità p e q, si applica la divergenza di Kullback-Leibler.
