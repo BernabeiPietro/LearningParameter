@@ -3,18 +3,16 @@
 Il seguente progetto è stato sviluppato su la versione di Python 3.6
 
 Per sviluppare il seguente progetto è stato utilizza il progetto github dell'utente ncullen93, [pyBN](https://github.com/ncullen93/pyBN).
-Quindi per eseguire è necessario scaricare e installare il progetto suddetto al quale vi rimando per la sua installazione.
-Unica cosa da rilevare come possibile problema nell'uso del suddetto progetto, è l'impiego di componenti non compatibili con python 3.6,  che impediscono cosi l'installazione e uso. Si risolve, commentando la riga from pyBN.plotting import *, del file /pyBN-master/pyBN/ init .py. .
 
-Per scaricare di ncullen93 ed installare le dipendenze necessarie aprire il terminale ed eseguire i seguenti comandi:
+Per scaricare il progetto pyBN di ncullen93 ed installare le dipendenze necessarie,  aprire il terminale ed eseguire i seguenti comandi:
 ```terminal
- git clone https://github.com/ncullen93/pyBN.git
+ git clone https://github.com/ncullen93/pyBN.git (o scaricare lo zip e unzip)
  cd pyBN-master/pyBN
- commentare la riga from pyBN.plotting import *, del file /pyBN-master/pyBN/ init .py.
- sostituire la riga 582 della file factor.py da 
- new_cpt = np.zeros((exp_len,)) in new_cpt = np.zeros(int(exp_len,))
- sostituire la riga 591 della file factor.py da 
-  for j in self.cpt[idx:(idx + rv_stride)]: a  for j in self.cpt[int(idx):int(idx + rv_stride)]:
+ commentare la riga from pyBN.plotting import *, del file /pyBN-master/pyBN/__ini__.py
+ sostituire la riga 582 della file factor.py 
+ da "new_cpt = np.zeros((exp_len,))" a  "new_cpt = np.zeros(int(exp_len,))"
+ sostituire la riga 591 della file factor.py
+ da "for j in self.cpt[idx:(idx + rv_stride)]:"  a  "for j in self.cpt[int(idx):int(idx + rv_stride)]:"
  cd ..
  pip install .
  ```
