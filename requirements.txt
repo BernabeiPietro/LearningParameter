@@ -1,0 +1,9 @@
+networkx
+matplotlib
+graphviz
+scipy 
+ipython 
+jupyter 
+pandas 
+sympy 
+nose
