@@ -6,7 +6,7 @@ Per sviluppare il seguente progetto è stato utilizza il progetto github dell'ut
 Quindi per eseguire è necessario scaricare e installare il progetto suddetto al quale vi rimando per la sua installazione.
 Unica cosa da rilevare come possibile problema nell'uso del suddetto progetto, è l'impiego di componenti non compatibili con python 3.6,  che impediscono cosi l'installazione e uso del suo pacchetto. Questo risolto, commentando la riga from pyBN.plotting import *, del file /pyBN-master/pyBN/ init .py. 
 
-$ git clone 
+$ git clone https://github.com/cipo64/LearningParameter.git
 $ cd LearningParameter
 $ pip3 install -r requirements.txt
 
