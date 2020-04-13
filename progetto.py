@@ -97,8 +97,7 @@ def main(pathBN, hyperparameter,
 
 pathBN = 'data/asia.bif'  # path della rete bayesiana da caricare
 hyperparameter = 1  # hyperparameter impostato su Laplace Smoothing
-n = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 50, 100, 200, 300, 400, 500, 600, 1000, 2000,
-     5000]  # il valore più grande indica la dimensione del dataset
+n = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 50, 100, 200, 300, 400, 500, 600, 1000, 2000]  # il valore più grande indica la dimensione del dataset
 # i valori più piccoli indicano il range di dati del dataset, da far apprendere alla rete, cosi da poterli campionare
 printBN = False  # flag per stampare il contenuto dei nodi
 main(pathBN, hyperparameter, n, printBN)
