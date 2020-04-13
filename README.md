@@ -18,7 +18,7 @@ Per scaricare il progetto pyBN di ncullen93 ed installare le dipendenze necessar
  ```
  Per scaricare il programma ed installare le dipendenze necessarie aprire il terminale ed eseguire i seguenti comandi:
  ```terminal
- git clone https://github.com/cipo64/LearningParameter.git
+ git clone https://github.com/BernabeiPietro/LearningParameter.git
  cd LearningParameter
  pip install -r requirements.txt
 ```
