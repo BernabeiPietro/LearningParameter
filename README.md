@@ -6,13 +6,20 @@ Per sviluppare il seguente progetto è stato utilizza il progetto github dell'ut
 Quindi per eseguire è necessario scaricare e installare il progetto suddetto al quale vi rimando per la sua installazione.
 Unica cosa da rilevare come possibile problema nell'uso del suddetto progetto, è l'impiego di componenti non compatibili con python 3.6,  che impediscono cosi l'installazione e uso. Si risolve, commentando la riga from pyBN.plotting import *, del file /pyBN-master/pyBN/ init .py. .
 
-Per scaricare il programma ed installare le dipendenze necessarie aprire il terminale ed eseguire i seguenti comandi:
+Per scaricare di ncullen93 ed installare le dipendenze necessarie aprire il terminale ed eseguire i seguenti comandi:
 ```terminal
+ git clone https://github.com/ncullen93/pyBN.git
+ cd pyBN-master/pyBN
+ commentare la riga from pyBN.plotting import *, del file /pyBN-master/pyBN/ init .py.
+ cd ..
+ pip3 install .
+ ```
+ Per scaricare il programma ed installare le dipendenze necessarie aprire il terminale ed eseguire i seguenti comandi:
+ ```terminal
  git clone https://github.com/cipo64/LearningParameter.git
  cd LearningParameter
  pip3 install -r requirements.txt
 ```
-
 
 
 ## Esecuzione
