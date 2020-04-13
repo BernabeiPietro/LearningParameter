@@ -11,14 +11,18 @@ Per scaricare di ncullen93 ed installare le dipendenze necessarie aprire il term
  git clone https://github.com/ncullen93/pyBN.git
  cd pyBN-master/pyBN
  commentare la riga from pyBN.plotting import *, del file /pyBN-master/pyBN/ init .py.
+ sostituire la riga 582 della file factor.py da 
+ new_cpt = np.zeros((exp_len,)) in new_cpt = np.zeros(int(exp_len,))
+ sostituire la riga 591 della file factor.py da 
+  for j in self.cpt[idx:(idx + rv_stride)]: a  for j in self.cpt[int(idx):int(idx + rv_stride)]:
  cd ..
- pip3 install .
+ pip install .
  ```
  Per scaricare il programma ed installare le dipendenze necessarie aprire il terminale ed eseguire i seguenti comandi:
  ```terminal
  git clone https://github.com/cipo64/LearningParameter.git
  cd LearningParameter
- pip3 install -r requirements.txt
+ pip install -r requirements.txt
 ```
 
 
