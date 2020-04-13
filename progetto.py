@@ -1,9 +1,10 @@
 from math import log
 
-import pyBN
+
 import numpy as np
 import matplotlib.pyplot as plt
 from pyBN.io.read import read_bn
+from pyBN.utils.random_sample import random_sample
 
 
 def calculatePosteriorMarginalization(node):
@@ -75,7 +76,8 @@ def main(pathBN, hyperparameter,
     numberOfSample = n
     numberOfSample.sort()
     result = []
-    re = pyBN.random_sample(bn, numberOfSample[len(numberOfSample) - 1])
+
+    re = random_sample(bn, numberOfSample[len(numberOfSample) - 1])
     precNumberOfValue = 0
     for numberOfValue in numberOfSample:
         calculateCounts(re[precNumberOfValue:numberOfValue], bn)
