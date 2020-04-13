@@ -2,7 +2,7 @@
 ## Prerequisiti e installazione
 Il seguente progetto è stato sviluppato su la versione di Python 3.6
 
-Per sviluppare il seguente progetto è stato utilizza il progetto github dell'utente ncullen93, [pyBN](https://github.com/ncullen93/pyBN), di cui si specifica l'uso della struttura dati rappresentante le reti e l'algoritmo di generazione dataset
+Per sviluppare il seguente progetto è stato utilizza il progetto github dell'utente ncullen93, [pyBN](https://github.com/ncullen93/pyBN), di cui si specifica l'uso della struttura dati rappresentante le reti e l'algoritmo di generazione dataset.
 
 Per scaricare il progetto pyBN di ncullen93 ed installare le dipendenze necessarie,  aprire il terminale ed eseguire i seguenti comandi:
 ```terminal
