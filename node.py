@@ -42,8 +42,6 @@ class node:
         unique, counts = np.unique(data, return_counts=True, axis=1)
         ind = 0
         for i in unique.T:
-            # for j in range(0, len(i)):
-            #    i[j] = 1 - i[j]
             num = (2 ** (len(self.father) + 1)) - tool.calculate_binary_value(i) - 1
             self.counts[num] = self.counts[num] + counts[ind]
             ind = ind + 1

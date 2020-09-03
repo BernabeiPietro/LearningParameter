@@ -39,26 +39,27 @@
 
 \newpage
 \section{Introduzione}
-	Il progetto è stato sviluppato su Python 3.8, ed è composto da due componenti, la cartella\textbf{Data}, il file python \textbf{progetto.py}.
-	La cartella \textbf{Data}, contiene modelli di rete bayesiane, definite all'interno del progetto di \textbf{ncullen93}, 	\textbf{pyBN}. Qui sono state copiate per permettere un più facile accesso.
-	Il programma è impostato per essere eseguito sulla rete bayesiana \textbf{asia.bif} generando un dataset di 2000 elementi, di cui con quantità crescente viene fatta apprendere alla rete\\\\
+	Il progetto è stato sviluppato con Python 3.8.\\
+	Nel  progetto è definità la cartella \textbf{Data}, la quale contiene  i modelli di rete bayesiane definiti nel progetto di \textbf{ncullen93}, \textbf{pyBN}. \\
+	Il programma è impostato per essere eseguito sulla rete bayesiana \textbf{asia.bif} generando un dataset di 5000 elementi.
 	\section{Installazione}	
-Mentre per l'installazione del progetto LearningParameter:
+Per l'installazione del progetto LearningParameter:
 \begin{lstlisting}
 git clone https://github.com/BernabeiPietro/LearningParameter.git
 cd LearningParameter
 conda env create -f environment.yml
-\end{lstlisting}
-
-	\section{Esecuzione}
-		Entrare nella cartella principale e eseguire il file main.py con il comando:
+\end{lstlisting} 
+	
+	 \section{Esecuzione}
+Per l'esecuzione, entrare nella cartella principale ed eseguire il file main.py:
 		\begin{lstlisting}
+		cd LearningParameter
 		python3 main.py
 		\end{lstlisting}
 		
 	\section{Risultati}
-	Di seguito si porta le curva di apprendimento ottenute da 2 diverse esecuzione, le quali sono simili, tranne per qualche leggera differenza, siccome il training set viene ogni volta ricalcolato.\\
-	Nel caso si volesse visionare  i valori della rete durante l'esecuzione del programma è necessario modificare la variabile printBN del file progetto.py in True\
+	Di seguito si porta le curva di apprendimento ottenute da 2 diverse esecuzione, le quali sono simili, tranne per qualche leggera differenza, data la ricreazione del training set.\
+	Nel caso si volesse visionare  i valori della rete durante l'esecuzione del programma è necessario modificare la variabile printBN del file main.py in True.
 	\begin{figure}[t]
 	\includegraphics[scale=0.8]{Figure_1.png}\\
 	\includegraphics[scale=0.8]{Figure_2.png}\\
