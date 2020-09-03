@@ -33,8 +33,9 @@ def main(path_bn="data/asia.bif",
     ylabel("divergenza")
     xlabel("dimensione dataset")
     show()
-    print(size_of_training_sets)
-    print(result)
+    if print_bn:
+        print(size_of_training_sets)
+        print(result) #valori divergenza
 
 
 main()
